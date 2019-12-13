@@ -30,3 +30,9 @@ fastboot flash persist persist.img
 fastboot flash sec sec.dat
 fastboot flash splash splash.img
 fastboot reboot
+
+http://docs.ubports.com/tr/latest/porting/installing-16-04.html
+https://ci.ubports.com/job/xenial-rootfs-armhf/
+https://gitlab.com/JBBgameich
+https://gitlab.com/JBBgameich/halium-install
+https://github.com/ubports
