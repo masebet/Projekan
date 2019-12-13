@@ -3,10 +3,30 @@ adb fastboot
 fastboot oem device-info
 C:\XiaoMi\XiaoMiFlash\
 C:\Program Files (x86)\Minimal ADB and Fastboot>
-
+sudo apt-get install android-tools-adb android-tools-fastboot
 https://alltutorial.net/cara-masuk-download-mode-edl-9008-redmi-5a-riva/
 Download Mode EDL 9008 testmode
-fastboot oem edl
-https://github.com/zeeshanhyder/android_kernel_xiaomi_dior
-https://forum.xda-developers.com/redmi-note/development/rom-ubuntu-touch-redmi-note-4g-dior-t3278588
-https://forum.xda-developers.com/showthread.php?t=459830
+sudo fastboot oem edl
+
+sudo fastboot flash partition gpt_both0.bin
+fastboot flash tz tz.mbn
+fastboot flash sbl1 sbl1.mbn
+fastboot flash rpm rpm.mbn
+fastboot flash aboot emmc_appsboot.mbn
+fastboot flash hyp hyp.mbn
+fastboot flash tzbak tz.mbn
+fastboot flash sbl1bak sbl1.mbn
+fastboot flash rpmbak rpm.mbn
+fastboot flash abootbak emmc_appsboot.mbn
+fastboot flash hypbak hyp.mbn
+fastboot erase boot
+fastboot flash modem NON-HLOS.bin
+fastboot flash system system.img
+fastboot flash cache cache.img
+fastboot flash userdata userdata.img
+fastboot flash recovery recovery.img
+fastboot flash boot boot.img
+fastboot flash persist persist.img
+fastboot flash sec sec.dat
+fastboot flash splash splash.img
+fastboot reboot
